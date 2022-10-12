@@ -1,0 +1,237 @@
+:root {
+    --colorPrincipal: rgba(0, 47, 255, 0.329);
+    --blanco: rgb(251, 251, 253);
+    --auxiliar: rgba(0, 0, 255, 0.623);
+    --fondo: rgba(43, 91, 136, 0.623);
+    --NotoSans: "Noto Sans", sans-serif;
+    --Roboto: "Roboto", sans-serif;
+    --Unbuntu: "Ubuntu", sans-serif;
+    --Josefin: "Josefin Sans", sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body {
+    width: 1200px;
+    margin: 0 auto!important;
+    font-family: var(--NotoSans);
+    background-color: rgba(0, 0, 255, 0.623);
+}
+
+.ocultar {
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}
+
+header {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+header p {
+    letter-spacing: 1.5px;
+}
+
+header>* {
+    margin: 1rem;
+}
+
+.login {
+    color: var(--colorPrincipal);
+    background-color: var(--blanco);
+    margin: 0 auto;
+    padding: 1rem 0 0.4rem;
+    box-shadow: 20px;
+    width: 35%;
+    height: auto;
+}
+
+.login form {
+    height: auto;
+}
+
+.login form input,
+form label,
+form button,
+form select {
+    margin: 0 auto;
+    display: block;
+}
+
+.login form label {
+    text-align: center;
+    font-size: 20px;
+    color: var(--auxiliar);
+    letter-spacing: 1.5;
+}
+
+.login form input {
+    color: black;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 5px 2px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--colorPrincipal);
+    margin: 1.3rem auto;
+    width: 18rem;
+}
+
+.login form input:focus {
+    outline: 0px;
+    border-bottom: var(--auxiliar) 1.5 solid;
+}
+
+.login form input:focus::placeholder {
+    color: transparent;
+}
+
+#boton {
+    margin-top: 1rem;
+    border-radius: 5px;
+    background-color: brown;
+    border: none;
+    color: white;
+    padding: 16px 32 px;
+    font-size: 16px;
+    opacity: 0.7;
+    transition: 0.4s;
+    width: 8rem;
+}
+
+#boton:hover {
+    cursor: 1rem auto;
+    width: 95%;
+}
+
+.agenda {
+    margin: 1rem auto;
+    width: 95%;
+}
+
+.agenda ul {
+    list-style: none;
+    margin: 0, auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.agenda ul>li:nth-child(1) {
+    width: 15rem;
+}
+
+.agenda ul>li:nth-child(5) {
+    width: 50rem;
+}
+
+.agenda ul li {
+    border: 1px solid var(--blanco);
+    width: 100%;
+    padding: 2px 0;
+    background-color: var(--colorPrincipal);
+}
+
+#contacto ul li {
+    background-color: var(--auxiliar);
+    font-family: var(--Unbuntu);
+}
+
+
+/* abre section herramientas */
+
+.herramientas,
+.mainCourse {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sectionHerramientas,
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5rem;
+}
+
+.titulo_h1 {
+    color: #162836;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.titulo__h2 {
+    color: #162836;
+    font-weight: bold;
+    margin-top: .5em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: medium;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.herramientasOpciones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.herramienta__tarjeta {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 14rem;
+    height: 10rem;
+    background-color: #cdb8e0;
+    color: #112535;
+    font-weight: bold;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-style: none;
+    border-radius: 5pt;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    -o-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    padding: 1.5em;
+    text-transform: uppercase;
+}
+
+.herramienta__tarjeta:hover {
+    font-weight: bold;
+    background-color: var(--auxiliar);
+    color: #F6E8EA;
+    cursor: pointer;
+}
